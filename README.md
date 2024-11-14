@@ -8,8 +8,8 @@ To load the unpacked extension locally in Chrome, follow these steps:
 1. **Clone or Download the Repository**:
    - Clone the repo or download and extract the ZIP file.
      ```bash
-     git clone https://github.com/your-username/your-repo.git
-     cd your-repo
+     git clone https://github.com/Woahai321/dmm-magnet-download.git
+     cd dmm-magnet-download
      ```
 
 2. **Navigate to the Extensions Page in Chrome**:
