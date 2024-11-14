@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "DMM Magnet Link Downloader",
+  "version": "1.0",
+  "description": "Downloads a .magnet file when the Magnet button is clicked.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "clipboardRead",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://debridmediamanager.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "512": "icon512.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://debridmediamanager.com/show/*", "https://debridmediamanager.com/movie/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "author": "Soluify™"
+}
